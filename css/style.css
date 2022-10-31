@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+width:50%;
+margin:auto;
+margin-top: 4rem;
+border: 2px solid white;
+}
+li {
+    list-style-type: none;
+    line-height: 2rem;
+    padding-left: 1rem;
+}
+li:nth-child(even) {
+    background-color: rgb(192, 206, 252);
+}
+li:nth-child(odd) {
+    background-color: rgb(94, 134, 245);
+}
+h1 {
+    font-size: 3rem;
+    color:white;
+    padding: 3rem;
+}
+#app {
+    background-color: black;
+
+}
+.container span {
+    color:lime;
+}
+.container {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+p {
+    color:white;
+}

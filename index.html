@@ -15,8 +15,10 @@
 <body>
     <div id="app">
         <div class="container">
+            <h1>Email<span>Finder</span></h1>
+            <p>Trova 10 email per volta di persone di cui non hai mai sentito nominare. Apriti al mondo ed invia messaggi a chiunque ti capiti a tiro. Anche se c'è il rischio di imbatterti in un serial killer, potrebbe anche capitarti di finire nel testamento di un anziano ricco prossimo alla morte.</p>
             <ul>
-                <li v-for="(email, index) in emailArray"></li>
+                <li v-for="(email, index) in emailArray">{{email}}</li>
             </ul>
     
         </div>

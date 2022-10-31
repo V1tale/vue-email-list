@@ -3,7 +3,7 @@ createApp({
     data(){
         return {
             emailArray: [],
-            email: "",
+            email: null,
         }
     },
     created() {
@@ -16,10 +16,10 @@ createApp({
             axios
             .get(`https://flynn.boolean.careers/exercises/api/random/mail`)
             .then ((fromServer) =>  {
-             this.email = fromServer.data.response;
-             console.log(this.email);
+             email = fromServer.data.response;
+             console.log(email);
+             this.emailArray.push(email);
             });
-            this.emailArray.push(this.email);
         };
     },
 
